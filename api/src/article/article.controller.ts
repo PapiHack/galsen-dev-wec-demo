@@ -14,8 +14,8 @@ import { CreateArticleDTO, UpdateArticleDTO } from './article.dto';
 import { ArticleService } from './article.service';
 
 @Controller({
- path: 'api/v1/articles',
- version: '1'   
+  path: 'api/v1/articles',
+  version: '1',
 })
 @ApiTags('articles')
 export class ArticleController {
