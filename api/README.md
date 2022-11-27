@@ -11,7 +11,7 @@
 ![PR](https://img.shields.io/github/issues-pr/PapiHack/galsen-dev-wec-demo)
 [![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-This is a simple REST API built with `NestJS` during `GalsenDev WeekEnd Code event` for manage articles.
+This is a simple REST API built with `NestJS` during `GalsenDev WeekEnd Code event` for managing articles.
 I also use `Docker` & `Docker Compose` in order to containerize the stack.
 
 ## Usage
