@@ -8,7 +8,7 @@ async function bootstrap() {
   const options = new DocumentBuilder()
     .setTitle('GalsenDev WeekEnd Code API')
     .setDescription(
-      'A simple REST API built with NestJS during the GalsenDev WeekEnd Code event to manage articles 😎',
+      'A simple REST API built with NestJS during the GalsenDev WeekEnd Code event for managing articles 😎',
     )
     .setContact('PapiHack', 'https://github.com/PapiHack', 'itdev94@gmail.com')
     .setVersion('1.0')
