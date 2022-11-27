@@ -1,0 +1,22 @@
+version: '3'
+services: 
+  database:
+    container_name: blog_db
+    image: postgres
+    volumes: 
+      - db_data:/var/lib/postgresql/data
+    restart: always
+    environment:
+      POSTGRES_DB: blog_db
+      POSTGRES_USER: galsendev
+      POSTGRES_PASSWORD: quatar2022
+  backend:
+    container_name: article-api
+    build: .
+    depends_on: 
+      - database
+    ports: 
+      - "8080:3000"
+    restart: always
+volumes:
+  db_data: {}

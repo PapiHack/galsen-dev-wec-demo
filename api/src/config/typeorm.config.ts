@@ -5,8 +5,8 @@ import * as dotenv from 'dotenv';
 dotenv.config();
 
 export const TypeOrmConfiguration: TypeOrmModuleOptions = {
-  type: 'mysql',
-  // type: 'postgres',
+  // type: 'mysql',
+  type: 'postgres',
   host: process.env.DB_HOST,
   database: process.env.DB_NAME,
   username: process.env.DB_USERNAME,
