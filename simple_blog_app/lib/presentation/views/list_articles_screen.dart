@@ -8,7 +8,10 @@ class ListArticlesScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       floatingActionButton: CustomFloatingButton(
-        onPressed: () => {},
+        onPressed: () => Navigator.pushNamed(
+          context,
+          '/articles/create',
+        ),
         child: Icon(
           Icons.add,
           color: Colors.white,
