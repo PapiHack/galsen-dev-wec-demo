@@ -19,6 +19,7 @@ class _ArticleFormCreationWidgetState extends State<ArticleFormCreationWidget> {
     return SingleChildScrollView(
       child: Form(
         key: _formKey,
+        autovalidateMode: AutovalidateMode.onUserInteraction,
         child: Column(
           children: [
             CustomTextFormField(

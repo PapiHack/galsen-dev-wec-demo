@@ -32,7 +32,7 @@ class CustomTextFormField extends StatelessWidget {
         validator: (value) {
           if (isRequired) {
             if (value == null || value.isEmpty) {
-              return 'Champ "$fieldName" obligatoire.';
+              return 'Le champ "$fieldName" est obligatoire.';
             }
           }
           return null;
