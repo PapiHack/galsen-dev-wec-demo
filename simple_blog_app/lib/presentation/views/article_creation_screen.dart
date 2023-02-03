@@ -22,22 +22,18 @@ class ArticleCreationScreen extends StatelessWidget {
             TitleWidget(
               title: 'SimpleBlog',
             ),
-            Expanded(
-              child: SingleChildScrollView(
-                child: Column(
-                  children: [
-                    Center(
-                      child: TitleWidget(
-                        title: 'Ajouter un article',
-                        fontSize: 24,
-                        margin: EdgeInsets.only(
-                          top: 50,
-                          bottom: 20,
-                        ),
-                      ),
-                    ),
-                  ],
+            Center(
+              child: TitleWidget(
+                margin: EdgeInsets.only(
+                  top: 50,
                 ),
+                title: 'Ajouter un article',
+                fontSize: 24,
+              ),
+            ),
+            Expanded(
+              child: Center(
+                child: ArticleFormCreationWidget(),
               ),
             ),
           ],
