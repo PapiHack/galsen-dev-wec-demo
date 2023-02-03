@@ -51,6 +51,7 @@ class ListArticleItemWidget extends StatelessWidget {
               top: 3,
               bottom: 26,
             ),
+            // TODO: For design integration purpose, to be removed !
             child: Text(
               'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit quam eius distinctio tempore vel beatae architecto nemo dolor possimus fuga fugiat nulla ullam autem sit voluptatum error dolores hic placeat, facere velit nam! Officiis porro maiores ex fugit veritatis ipsa!',
               maxLines: 4,
