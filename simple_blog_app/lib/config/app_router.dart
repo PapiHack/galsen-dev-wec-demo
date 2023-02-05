@@ -13,6 +13,10 @@ class AppRouter {
         return MaterialPageRoute(
           builder: (_) => const ArticleCreationScreen(),
         );
+      case '/articles/details':
+        return MaterialPageRoute(
+          builder: (_) => const ArticleDetailScreen(),
+        );
       default:
         return _errorRoute();
     }

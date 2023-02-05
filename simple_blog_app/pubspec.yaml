@@ -32,6 +32,7 @@ dependencies:
   google_fonts: ^4.0.1
   flutter_dotenv: ^5.0.2
   dio: ^4.0.6
+  flutter_svg: ^1.1.6
 
 dev_dependencies:
   flutter_test:
@@ -51,6 +52,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - .env
+    - assets/arrow_go_back.svg
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

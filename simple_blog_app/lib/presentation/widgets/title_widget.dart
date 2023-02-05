@@ -7,6 +7,7 @@ class TitleWidget extends StatelessWidget {
   final double? fontSize;
   final FontWeight? fontWeight;
   final FontStyle? fontStyle;
+  final Color? color;
   const TitleWidget({
     required this.title,
     this.margin = const EdgeInsets.only(
@@ -16,6 +17,7 @@ class TitleWidget extends StatelessWidget {
     this.fontSize = 40,
     this.fontWeight = FontWeight.w700,
     this.fontStyle = FontStyle.normal,
+    this.color = Colors.black,
     Key? key,
   }) : super(key: key);
 
@@ -29,6 +31,7 @@ class TitleWidget extends StatelessWidget {
           fontSize: fontSize,
           fontWeight: fontWeight,
           fontStyle: fontStyle,
+          color: color,
         ),
       ),
     );
