@@ -39,7 +39,12 @@ class _ArticleFormCreationWidgetState extends State<ArticleFormCreationWidget> {
               fieldName: 'auteur',
             ),
             CustomElevatedButton(
-              onPressed: () => {},
+              // TODO: To be updated
+              onPressed: () => Notyf.show(
+                context,
+                message: 'Article ajouté avec succès!',
+                type: 'success',
+              ),
               child: Center(
                 child: Text(
                   'AJOUTER',
