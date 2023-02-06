@@ -15,7 +15,6 @@ class _ArticleFormCreationWidgetState extends State<ArticleFormCreationWidget> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   final ArticleController _articleFormController = ArticleController();
 
-
   // TODO: To be implemented !
   void _submitArticleCreationForm() async {
     Notyf.show(
