@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:simple_blog_app/presentation/widgets/title_widget.dart';
+import 'package:simple_blog_app/presentation/presentation.dart';
 
 class ListArticleItemDetailWidget extends StatelessWidget {
   const ListArticleItemDetailWidget({Key? key}) : super(key: key);

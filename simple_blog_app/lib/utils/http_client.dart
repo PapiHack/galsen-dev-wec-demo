@@ -17,18 +17,10 @@ class HttpClient {
     this.client = this.client ?? Dio(BaseOptions(baseUrl: baseURL!));
   }
 
-  Future<Response<dynamic>> get(
-    String url, {
-    Map<String, dynamic>? queries,
-    Options? options,
-  }) async {
+  Future<Response<dynamic>> get(String url) async {
     String resourceUrl = '${this.baseURL}/$url';
     try {
-      final response = await this.client!.get(
-            resourceUrl,
-            queryParameters: queries,
-            options: options,
-          );
+      final response = await this.client!.get(resourceUrl);
       return response;
     } on SocketException {
       throw Exception('No Internet connection !');
