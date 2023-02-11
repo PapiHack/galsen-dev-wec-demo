@@ -14,6 +14,16 @@ class ArticleFormCreationWidget extends StatefulWidget {
 class _ArticleFormCreationWidgetState extends State<ArticleFormCreationWidget> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   final ArticleController _articleFormController = ArticleController();
+
+  // TODO: To be implemented !
+  void _submitArticleCreationForm() async {
+    Notyf.show(
+      context,
+      message: 'Article ajouté avec succès!',
+      type: 'success',
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -39,12 +49,7 @@ class _ArticleFormCreationWidgetState extends State<ArticleFormCreationWidget> {
               fieldName: 'auteur',
             ),
             CustomElevatedButton(
-              // TODO: To be updated
-              onPressed: () => Notyf.show(
-                context,
-                message: 'Article ajouté avec succès!',
-                type: 'success',
-              ),
+              onPressed: () => _submitArticleCreationForm(),
               child: Center(
                 child: Text(
                   'AJOUTER',
