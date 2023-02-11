@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:simple_blog_app/data/model/article_model.dart';
+import 'package:simple_blog_app/data/data.dart';
 import 'package:simple_blog_app/presentation/presentation.dart';
 
 class ArticleDetailScreen extends StatelessWidget {

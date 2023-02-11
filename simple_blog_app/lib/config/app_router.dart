@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:simple_blog_app/data/model/model.dart';
+import 'package:simple_blog_app/data/data.dart';
 import 'package:simple_blog_app/presentation/presentation.dart';
 
 class AppRouter {

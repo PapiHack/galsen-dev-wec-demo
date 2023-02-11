@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:simple_blog_app/data/model/model.dart';
+import 'package:simple_blog_app/data/data.dart';
 import 'package:simple_blog_app/presentation/presentation.dart';
 
 class ListArticlesScreen extends StatelessWidget {
@@ -8,7 +8,7 @@ class ListArticlesScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // TODO: Get articles from API
-    var articles = [
+    List<ArticleModel> articles = [
       ArticleModel(
         id: 1,
         title: 'Article 1',

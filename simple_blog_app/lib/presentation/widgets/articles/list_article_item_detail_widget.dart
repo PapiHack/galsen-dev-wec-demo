@@ -9,6 +9,24 @@ class ListArticleItemDetailWidget extends StatelessWidget {
     required this.articleModel,
   }) : super(key: key);
 
+  String getDateMonth(int month) {
+    List<String> months = [
+      'Janvier',
+      'Février',
+      'Mars',
+      'Avril',
+      'Mai',
+      'Juin',
+      'Juillet',
+      'Août',
+      'Septembre',
+      'Octobre',
+      'Novembre',
+      'Décembre',
+    ];
+    return months.elementAt(month - 1);
+  }
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -36,9 +54,9 @@ class ListArticleItemDetailWidget extends StatelessWidget {
                   ],
                 ),
               ),
-              // TODO: Parse the date
               TitleWidget(
-                title: '21 Novembre 2022',
+                title:
+                    '${articleModel.createdAt.day} ${getDateMonth(articleModel.createdAt.month)} ${articleModel.createdAt.year}',
                 fontSize: 12,
                 fontWeight: FontWeight.w400,
                 margin: EdgeInsets.only(left: 25, right: 25),
