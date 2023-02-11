@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simple_blog_app/data/model/model.dart';
 import 'package:simple_blog_app/presentation/presentation.dart';
 
 class AppRouter {
@@ -15,7 +16,9 @@ class AppRouter {
         );
       case '/articles/details':
         return MaterialPageRoute(
-          builder: (_) => const ArticleDetailScreen(),
+          builder: (_) => ArticleDetailScreen(
+            articleModel: (settings.arguments as Map)['article'] as ArticleModel,
+          ),
         );
       default:
         return _errorRoute();

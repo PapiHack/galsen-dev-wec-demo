@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:simple_blog_app/data/model/model.dart';
 import 'package:simple_blog_app/presentation/presentation.dart';
 
 class ListArticlesScreen extends StatelessWidget {
@@ -6,6 +7,27 @@ class ListArticlesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // TODO: Get articles from API
+    var articles = [
+      ArticleModel(
+        id: 1,
+        title: 'Article 1',
+        content:
+            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit quam eius distinctio tempore vel beatae architecto nemo dolor possimus fuga fugiat nulla ullam autem sit voluptatum error dolores hic placeat, facere velit nam! Officiis porro maiores ex fugit veritatis ipsa!',
+        author: 'John Doe',
+        createdAt: DateTime.now(),
+        updatedAt: DateTime.now(),
+      ),
+      ArticleModel(
+        id: 2,
+        title: 'Article 2',
+        content:
+            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit quam eius distinctio tempore vel beatae architecto nemo dolor possimus fuga fugiat nulla ullam autem sit voluptatum error dolores hic placeat, facere velit nam! Officiis porro maiores ex fugit veritatis ipsa!',
+        author: 'Jane Doe',
+        createdAt: DateTime.now(),
+        updatedAt: DateTime.now(),
+      ),
+    ];
     return Scaffold(
       floatingActionButton: CustomFloatingButton(
         onPressed: () => Navigator.pushNamed(
@@ -32,7 +54,11 @@ class ListArticlesScreen extends StatelessWidget {
                 // ),
                 child: Column(
                   children: [
-                    ListArticleItemWidget(),
+                    ...articles.map(
+                      (article) => ListArticleItemWidget(
+                        articleModel: article,
+                      ),
+                    ),
                   ],
                 ),
               ),

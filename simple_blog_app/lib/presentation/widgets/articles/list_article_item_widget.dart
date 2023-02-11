@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:simple_blog_app/data/data.dart';
 
 class ListArticleItemWidget extends StatelessWidget {
-  const ListArticleItemWidget({Key? key}) : super(key: key);
+  final ArticleModel articleModel;
+  const ListArticleItemWidget({
+    Key? key,
+    required this.articleModel,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +15,9 @@ class ListArticleItemWidget extends StatelessWidget {
       onTap: () => Navigator.pushNamed(
         context,
         '/articles/details',
-        // TODO: Pass the id/article_object as argument !
+        arguments: {
+          'article': articleModel,
+        },
       ),
       child: Container(
         margin: EdgeInsets.symmetric(
@@ -42,7 +49,7 @@ class ListArticleItemWidget extends StatelessWidget {
                 top: 24,
               ),
               child: Text(
-                'Article 1',
+                articleModel.title,
                 style: GoogleFonts.inter(
                   fontSize: 16,
                   fontWeight: FontWeight.w700,
@@ -57,9 +64,8 @@ class ListArticleItemWidget extends StatelessWidget {
                 top: 3,
                 bottom: 26,
               ),
-              // TODO: For design integration purpose, to be removed !
               child: Text(
-                'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit quam eius distinctio tempore vel beatae architecto nemo dolor possimus fuga fugiat nulla ullam autem sit voluptatum error dolores hic placeat, facere velit nam! Officiis porro maiores ex fugit veritatis ipsa!',
+                articleModel.content,
                 maxLines: 4,
                 overflow: TextOverflow.ellipsis,
                 style: GoogleFonts.inter(

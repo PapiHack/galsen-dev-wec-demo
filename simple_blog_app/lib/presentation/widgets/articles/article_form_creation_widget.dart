@@ -19,7 +19,7 @@ class _ArticleFormCreationWidgetState extends State<ArticleFormCreationWidget> {
   void _submitArticleCreationForm() async {
     Notyf.show(
       context,
-      message: 'Article ajouté avec succès!',
+      message: 'Article ajouté avec succés!',
       type: 'success',
     );
   }
