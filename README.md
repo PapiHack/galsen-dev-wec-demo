@@ -16,7 +16,7 @@ For the demo implementation, we decide to create a simple blog app with three (3
 - Another page for displaying the details of a specific article
 - And a last one that allow us to create a new article
 
-We also add `pull-to-refresh` and `automatic data polling` features.
+We also add some nice features like `pull-to-refresh` and `automatic data polling`.
 
 ## Target Design
 
@@ -24,7 +24,7 @@ We also add `pull-to-refresh` and `automatic data polling` features.
     <tr>
         <td><img src="./screenshots/home.png"/></td>
         <td><img src="./screenshots/article-details.png"/></td>
-        <td><img src="./screenshots/add-article-form.png">/</td>
+        <td><img src="./screenshots/add-article-form.png"/></td>
     </tr>
 </table>
 
