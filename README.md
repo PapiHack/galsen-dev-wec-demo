@@ -1,6 +1,6 @@
 # 🚀 Galsen Dev - WeekEnd Code Demo 🚀
 
-[![Made-In-Senegal](https://github.com/GalsenDev221/made.in.senegal/blob/master/assets/badge.svg)](https://github.com/GalsenDev221/made.in.senegal)
+[![Made-In-Senegal](https://github.com/GalsenDev221/made.in.senegal/blob/master/assets/badge.svg)](https://github.com/GalsenDev221/made.in.senegal)  
 ![Issues](https://img.shields.io/github/issues/PapiHack/galsen-dev-wec-demo)
 ![PR](https://img.shields.io/github/issues-pr/PapiHack/galsen-dev-wec-demo)
 [![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
