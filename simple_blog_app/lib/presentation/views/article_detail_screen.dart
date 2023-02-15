@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:simple_blog_app/data/data.dart';
 import 'package:simple_blog_app/presentation/presentation.dart';
 
 class ArticleDetailScreen extends StatelessWidget {
-  const ArticleDetailScreen({Key? key}) : super(key: key);
+  final ArticleModel articleModel;
+  const ArticleDetailScreen({
+    Key? key,
+    required this.articleModel,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,12 +24,13 @@ class ArticleDetailScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // TODO: To be replaced by the article's title
             TitleWidget(
-              title: 'Article 1',
+              title: articleModel.title,
             ),
             Expanded(
-              child: ListArticleItemDetailWidget(),
+              child: ListArticleItemDetailWidget(
+                articleModel: articleModel,
+              ),
             ),
           ],
         ),
