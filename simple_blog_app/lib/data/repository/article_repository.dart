@@ -11,16 +11,28 @@ class ArticleRepository {
 
   Future<List<ArticleModel>> getAll() async {
     var response = await this.articleService!.fetchAll();
-    return ArticleModel.resolveList(response.data);
+    try {
+      return ArticleModel.resolveList(response.data);
+    } catch (e) {
+      throw Exception('Error while trying to parse list of articles !');
+    }
   }
 
   Future<ArticleModel> getById(int articleID) async {
     var response = await this.articleService!.fetchById(articleID);
-    return ArticleModel.fromJson(response.data);
+    try {
+      return ArticleModel.fromJson(response.data);
+    } catch (e) {
+      throw Exception('Error while trying to parse the article #$articleID !');
+    }
   }
 
   Future<ArticleModel> save(dynamic data) async {
     var response = await this.articleService!.createArticle(data);
-    return ArticleModel.fromJson(response.data);
+    try {
+      return ArticleModel.fromJson(response.data);
+    } catch (e) {
+      throw Exception('Error while trying to parse the saved article !');
+    }
   }
 }
