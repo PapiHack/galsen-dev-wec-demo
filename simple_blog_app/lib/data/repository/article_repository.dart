@@ -14,7 +14,7 @@ class ArticleRepository {
     try {
       return ArticleModel.resolveList(response.data);
     } catch (e) {
-      throw Exception('Error while trying to parse list of articles !');
+      throw Exception('Error while trying to parse the list of articles !');
     }
   }
 
