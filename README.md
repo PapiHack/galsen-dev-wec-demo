@@ -1,9 +1,9 @@
 # 🚀 Galsen Dev - WeekEnd Code Demo 🚀
 
 [![Made-In-Senegal](https://github.com/GalsenDev221/made.in.senegal/blob/master/assets/badge.svg)](https://github.com/GalsenDev221/made.in.senegal)  
-![Issues](https://img.shields.io/github/issues/PapiHack/galsen-dev-wec-demo)
-![PR](https://img.shields.io/github/issues-pr/PapiHack/galsen-dev-wec-demo)
-[![Open Source Love png1](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
+![Issues](https://img.shields.io/github/issues/PapiHack/galsen-dev-wec-demo?style=for-the-badge&logo=appveyor)
+![PR](https://img.shields.io/github/issues-pr/PapiHack/galsen-dev-wec-demo?style=for-the-badge&logo=appveyor)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source-175x29.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 This repo contains the source code of our demo at [GalsenDev](https://github.com/GalsenDev221) "WeekEnd du Code" event.  
 The topic of our talk was `Flutter State Management: A Simple Use Case With BLoC & Riverpod`.
