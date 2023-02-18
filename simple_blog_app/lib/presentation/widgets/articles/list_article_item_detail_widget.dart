@@ -40,7 +40,7 @@ class ListArticleItemDetailWidget extends StatelessWidget {
                 child: Row(
                   children: [
                     TitleWidget(
-                      title: 'Écrit par',
+                      title: 'Écrit par ',
                       fontSize: 12,
                       fontWeight: FontWeight.w400,
                       margin: EdgeInsets.only(left: 25),
