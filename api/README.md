@@ -26,7 +26,7 @@ I also use `Docker` & `Docker Compose` in order to containerize the stack.
 
 - Run `npm run start` in order to start the nest server
 
-- Then go to <http://localhost:3000/docs> in order to visualize the `Swagger Documentation` of the API
+- Then go to <http://localhost:3000/api/docs> in order to visualize the `Swagger Documentation` of the API
 
 ### Docker Installation
 
@@ -36,7 +36,7 @@ If you already have `Docker` and `Docker Compose` installed in your system, you 
 
 - Run the following command: `docker-compose up -d`
 
-After that, you can visit <http://localhost:8080/docs>
+After that, you can visit <http://localhost:8080/api/docs>
 
 Run `docker-compose down` to stop and remove all the services or `docker-compose stop` to only stop services.
 

@@ -1,27 +1,35 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:simple_blog_app/data/data.dart';
 import 'package:simple_blog_app/presentation/presentation.dart';
 
-class ArticleFormCreationWidget extends StatefulWidget {
+class ArticleFormCreationWidget extends ConsumerStatefulWidget {
   const ArticleFormCreationWidget({Key? key}) : super(key: key);
 
   @override
-  State<ArticleFormCreationWidget> createState() =>
+  ConsumerState<ArticleFormCreationWidget> createState() =>
       _ArticleFormCreationWidgetState();
 }
 
-class _ArticleFormCreationWidgetState extends State<ArticleFormCreationWidget> {
+class _ArticleFormCreationWidgetState
+    extends ConsumerState<ArticleFormCreationWidget> {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   final ArticleController _articleFormController = ArticleController();
 
-  // TODO: To be implemented !
   void _submitArticleCreationForm() async {
+    var articleFormData = {
+      'title': _articleFormController.title.text,
+      'author': _articleFormController.author.text,
+      'content': _articleFormController.content.text,
+    };
+    ref.read(articleCreationProvider(articleFormData));
     Notyf.show(
       context,
-      message: 'Article ajouté avec succés!',
+      message: 'Article créé avec succés!',
       type: 'success',
     );
+    Navigator.pop(context);
   }
 
   @override
