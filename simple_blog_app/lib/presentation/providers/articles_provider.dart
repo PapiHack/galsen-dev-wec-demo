@@ -7,6 +7,14 @@ final articleRepositoryProvider = Provider<ArticleRepository>(
 
 final articlesProvider = FutureProvider.autoDispose<List<ArticleModel>>(
   (ref) async {
+    // Will allow you to refresh the provider every 15s
+    // final timer = Timer(
+    //   const Duration(
+    //     seconds: 15,
+    //   ),
+    //   () => ref.invalidateSelf(),
+    // );
+    // ref.onDispose(timer.cancel);
     final articleRepository = ref.watch(articleRepositoryProvider);
     return articleRepository.getAll();
   },
