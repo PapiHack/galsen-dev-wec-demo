@@ -20,13 +20,13 @@ class ListArticleItemWidget extends StatelessWidget {
         },
       ),
       child: Container(
-        margin: EdgeInsets.symmetric(
+        margin: const EdgeInsets.symmetric(
           vertical: 15,
           horizontal: 20,
         ),
         decoration: BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.all(
+          borderRadius: const BorderRadius.all(
             Radius.circular(
               20,
             ),
@@ -44,7 +44,7 @@ class ListArticleItemWidget extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Container(
-              margin: EdgeInsets.only(
+              margin: const EdgeInsets.only(
                 left: 25,
                 top: 24,
               ),
@@ -58,7 +58,7 @@ class ListArticleItemWidget extends StatelessWidget {
               ),
             ),
             Container(
-              margin: EdgeInsets.only(
+              margin: const EdgeInsets.only(
                 left: 25,
                 right: 9,
                 top: 3,

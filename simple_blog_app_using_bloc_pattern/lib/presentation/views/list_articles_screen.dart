@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:simple_blog_app_using_bloc_pattern/data/data.dart';
+import 'package:simple_blog_app_using_bloc_pattern/features/articles/bloc/articles_bloc.dart';
 import 'package:simple_blog_app_using_bloc_pattern/presentation/presentation.dart';
 
 class ListArticlesScreen extends StatelessWidget {
@@ -7,34 +9,16 @@ class ListArticlesScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: Get articles from API
-    List<ArticleModel> articles = [
-      ArticleModel(
-        id: 1,
-        title: 'Article 1',
-        content:
-            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit quam eius distinctio tempore vel beatae architecto nemo dolor possimus fuga fugiat nulla ullam autem sit voluptatum error dolores hic placeat, facere velit nam! Officiis porro maiores ex fugit veritatis ipsa!',
-        author: 'John Doe',
-        createdAt: DateTime.now(),
-        updatedAt: DateTime.now(),
-      ),
-      ArticleModel(
-        id: 2,
-        title: 'Article 2',
-        content:
-            'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit quam eius distinctio tempore vel beatae architecto nemo dolor possimus fuga fugiat nulla ullam autem sit voluptatum error dolores hic placeat, facere velit nam! Officiis porro maiores ex fugit veritatis ipsa!',
-        author: 'Jane Doe',
-        createdAt: DateTime.now(),
-        updatedAt: DateTime.now(),
-      ),
-    ];
+    
+    BlocProvider.of<ArticlesBloc>(context).add(ArticlesLoadDataEvent());
+
     return Scaffold(
       floatingActionButton: CustomFloatingButton(
         onPressed: () => Navigator.pushNamed(
           context,
           '/articles/create',
         ),
-        child: Icon(
+        child: const Icon(
           Icons.add,
           color: Colors.white,
           size: 24,
@@ -44,7 +28,7 @@ class ListArticlesScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            TitleWidget(
+            const TitleWidget(
               title: 'SimpleBlog',
             ),
             Expanded(
@@ -52,15 +36,33 @@ class ListArticlesScreen extends StatelessWidget {
                 // physics: BouncingScrollPhysics(
                 //   parent: AlwaysScrollableScrollPhysics(),
                 // ),
-                child: Column(
-                  children: [
-                    ...articles.map(
-                      (article) => ListArticleItemWidget(
-                        articleModel: article,
-                      ),
-                    ),
-                  ],
-                ),
+                child: BlocBuilder<ArticlesBloc, ArticlesState>(
+                  builder: ((context, state) {
+                    if(state is ArticlesDataLoadedSuccessState) {
+                      List<ArticleModel> articles = state.articles;
+                      return articles.isEmpty ? const SizedBox(child: Text('Aucun artilces')) : Column(
+                        children: [
+                          ...articles.map(
+                            (article) => ListArticleItemWidget(
+                              articleModel: article,
+                            ),
+                          ),
+                        ],
+                      );
+                    } else if(state is ArticlesDataLoadingFailureState) {
+                      return SizedBox(
+                        child: Text(
+                          state.message,
+                          style: const TextStyle(
+                            color: Colors.red
+                          ),
+                        ),
+                      );
+                    } else {
+                      return const CircularProgressIndicator(color: Colors.black,);
+                    }
+                  })
+                )
               ),
             )
           ],
@@ -69,3 +71,13 @@ class ListArticlesScreen extends StatelessWidget {
     );
   }
 }
+// CircularProgressIndicator(color: Colors.black,),
+// Column(
+//                   children: [
+//                     ...articles.map(
+//                       (article) => ListArticleItemWidget(
+//                         articleModel: article,
+//                       ),
+//                     ),
+//                   ],
+//                 )

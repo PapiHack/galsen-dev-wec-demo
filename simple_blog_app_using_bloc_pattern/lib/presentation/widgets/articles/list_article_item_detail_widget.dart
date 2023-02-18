@@ -32,15 +32,15 @@ class ListArticleItemDetailWidget extends StatelessWidget {
     return Column(
       children: [
         Container(
-          margin: EdgeInsets.only(top: 11),
+          margin: const EdgeInsets.only(top: 11),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               SizedBox(
                 child: Row(
                   children: [
-                    TitleWidget(
-                      title: 'Écrit par',
+                    const TitleWidget(
+                      title: 'Écrit par ',
                       fontSize: 12,
                       fontWeight: FontWeight.w400,
                       margin: EdgeInsets.only(left: 25),
@@ -59,14 +59,14 @@ class ListArticleItemDetailWidget extends StatelessWidget {
                     '${articleModel.createdAt.day} ${getDateMonth(articleModel.createdAt.month)} ${articleModel.createdAt.year}',
                 fontSize: 12,
                 fontWeight: FontWeight.w400,
-                margin: EdgeInsets.only(left: 25, right: 25),
+                margin: const EdgeInsets.only(left: 25, right: 25),
               ),
             ],
           ),
         ),
         Container(
-          margin: EdgeInsets.symmetric(horizontal: 25.0),
-          child: Divider(
+          margin: const EdgeInsets.symmetric(horizontal: 25.0),
+          child: const Divider(
             thickness: 1.0,
             color: Colors.black,
           ),
@@ -79,12 +79,12 @@ class ListArticleItemDetailWidget extends StatelessWidget {
                   title: articleModel.content,
                   fontSize: 12,
                   fontWeight: FontWeight.w400,
-                  margin: EdgeInsets.only(
+                  margin: const EdgeInsets.only(
                     left: 25,
                     right: 25,
                   ),
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 20,
                 ),
               ],

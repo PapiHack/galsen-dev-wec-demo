@@ -9,7 +9,7 @@ class ArticleCreationScreen extends StatelessWidget {
     return Scaffold(
       floatingActionButton: CustomFloatingButton(
         onPressed: () => Navigator.pop(context),
-        child: Icon(
+        child: const Icon(
           Icons.close_sharp,
           color: Colors.white,
           size: 24,
@@ -18,7 +18,7 @@ class ArticleCreationScreen extends StatelessWidget {
       body: SafeArea(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
+          children: const [
             TitleWidget(
               title: 'SimpleBlog',
             ),
