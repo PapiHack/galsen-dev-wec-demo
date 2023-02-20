@@ -36,6 +36,7 @@ In this repo, you'll find the following directories :
 - [api](https://github.com/PapiHack/galsen-dev-wec-demo/tree/master/api) folder that contains the `REST API` source code built with [NestJS](https://nestjs.com/).
 - [simple_blog_app](https://github.com/PapiHack/galsen-dev-wec-demo/tree/master/simple_blog_app) folder that contains the flutter use case implementation with [Riverpod](https://riverpod.dev/).
 - [simple_blog_app_using_bloc_pattern](https://github.com/PapiHack/galsen-dev-wec-demo/tree/master/simple_blog_app_using_bloc_pattern) folder that contains the flutter use case implementation with [BLoC](https://bloclibrary.dev/).
+- [slides](https://github.com/PapiHack/galsen-dev-wec-demo/tree/master/slides) folder that contains the presentation slides of our talk.
 
 ## Contributing
 
