@@ -8,6 +8,8 @@
 This repo contains the source code of our demo at [GalsenDev](https://github.com/GalsenDev221) "WeekEnd du Code" event.  
 The topic of our talk was `Flutter State Management: A Simple Use Case With BLoC & Riverpod`.
 
+You can find the replay of our live session on the [GalsenDev's](https://github.com/GalsenDev221) youtube channel [here](https://www.youtube.com/playlist?list=PLhpNVMvMDCRPsOFS2JZyzOFWwlIyFyvzw).
+
 ## Use Case Description
 
 For the demo implementation, we decide to create a simple blog app with three (3) main features/screens :
