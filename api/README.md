@@ -4,6 +4,7 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
+[![Made-In-Senegal](https://github.com/GalsenDev221/made.in.senegal/blob/master/assets/badge.svg)](https://github.com/GalsenDev221/made.in.senegal) 
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=for-the-badge&logo=appveyor)](https://github.com/prettier/prettier)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge&logo=appveyor)](./LICENSE)
 [![Coverage Status](https://img.shields.io/badge/coverage-100%25-brightgreen?style=for-the-badge&logo=appveyor)](https://coveralls.io/github/PapiHack/https://github.com/PapiHack/galsen-dev-wec-demo?branch=master)
