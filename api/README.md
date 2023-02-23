@@ -4,13 +4,13 @@
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>
 
-[![Made-In-Senegal](https://github.com/GalsenDev221/made.in.senegal/blob/master/assets/badge.svg)](https://github.com/GalsenDev221/made.in.senegal) 
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=for-the-badge&logo=appveyor)](https://github.com/prettier/prettier)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge&logo=appveyor)](./LICENSE)
 [![Coverage Status](https://img.shields.io/badge/coverage-100%25-brightgreen?style=for-the-badge&logo=appveyor)](https://coveralls.io/github/PapiHack/https://github.com/PapiHack/galsen-dev-wec-demo?branch=master)
 ![Issues](https://img.shields.io/github/issues/PapiHack/galsen-dev-wec-demo?style=for-the-badge&logo=appveyor)
 ![PR](https://img.shields.io/github/issues-pr/PapiHack/galsen-dev-wec-demo?style=for-the-badge&logo=appveyor)
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source-175x29.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source-175x29.png?v=103)](https://github.com/ellerbrock/open-source-badges/)  
+[![Made-In-Senegal](https://github.com/GalsenDev221/made.in.senegal/blob/master/assets/badge.svg)](https://github.com/GalsenDev221/made.in.senegal) 
 
 This is a simple REST API built with `NestJS` during `GalsenDev WeekEnd Code event` for managing articles.
 I also use `Docker` & `Docker Compose` in order to containerize the stack.
