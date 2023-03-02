@@ -27,8 +27,8 @@ class ArticleRepository {
     }
   }
 
-  Future<ArticleModel> save(dynamic data) async {
-    var response = await this.articleService!.createArticle(data);
+  Future<ArticleModel> save(ArticleDTO articleDTO) async {
+    var response = await this.articleService!.createArticle(articleDTO);
     try {
       return ArticleModel.fromJson(response.data);
     } catch (e) {
