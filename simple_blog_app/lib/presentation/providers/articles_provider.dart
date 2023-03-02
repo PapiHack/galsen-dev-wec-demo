@@ -28,7 +28,7 @@ final singleArticleProvider = FutureProvider.family<ArticleModel, int>(
 );
 
 final articleCreationProvider =
-    FutureProvider.family.autoDispose<ArticleModel, Map<String, String>>(
+    FutureProvider.family.autoDispose<ArticleModel, ArticleDTO>(
   (ref, articleData) async {
     final articleRepository = ref.watch(articleRepositoryProvider);
     var article = articleRepository.save(articleData);

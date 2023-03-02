@@ -1,4 +1,5 @@
 import 'package:dio/dio.dart';
+import 'package:simple_blog_app/data/data.dart';
 import 'package:simple_blog_app/utils/utils.dart';
 
 class ArticleService {
@@ -18,6 +19,6 @@ class ArticleService {
   Future<Response<dynamic>> fetchById(int articleID) async =>
       await this.httpClient!.get('${this.endpoint}/$articleID');
 
-  Future<Response<dynamic>> createArticle(Map<String, dynamic> data) async =>
-      await this.httpClient!.post(this.endpoint!, data);
+  Future<Response<dynamic>> createArticle(ArticleDTO articleDTO) async =>
+      await this.httpClient!.post(this.endpoint!, articleDTO.toJson());
 }

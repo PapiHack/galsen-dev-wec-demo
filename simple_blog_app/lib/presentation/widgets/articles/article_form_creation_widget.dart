@@ -18,12 +18,12 @@ class _ArticleFormCreationWidgetState
   final ArticleController _articleFormController = ArticleController();
 
   void _submitArticleCreationForm() async {
-    var articleFormData = {
-      'title': _articleFormController.title.text,
-      'author': _articleFormController.author.text,
-      'content': _articleFormController.content.text,
-    };
-    ref.read(articleCreationProvider(articleFormData));
+    ArticleDTO articleDTO = ArticleDTO(
+      title: _articleFormController.title.text,
+      content: _articleFormController.content.text,
+      author: _articleFormController.author.text,
+    );
+    ref.read(articleCreationProvider(articleDTO));
     Notyf.show(
       context,
       message: 'Article créé avec succés!',
