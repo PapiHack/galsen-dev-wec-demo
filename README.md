@@ -3,6 +3,10 @@
 [![Made-In-Senegal](https://github.com/GalsenDev221/made.in.senegal/blob/master/assets/badge.svg)](https://github.com/GalsenDev221/made.in.senegal)  
 ![Issues](https://img.shields.io/github/issues/PapiHack/galsen-dev-wec-demo?style=for-the-badge&logo=appveyor)
 ![PR](https://img.shields.io/github/issues-pr/PapiHack/galsen-dev-wec-demo?style=for-the-badge&logo=appveyor)
+[![Dart](https://img.shields.io/badge/dart-3776AB?style=for-the-badge&logo=dart&logoColor=white)](https://img.shields.io/badge/dart-3776AB?style=for-the-badge&logo=dart&logoColor=white)
+[![Flutter](https://img.shields.io/badge/flutter-3776AB?style=for-the-badge&logo=flutter&logoColor=white)](https://img.shields.io/badge/flutter-3776AB?style=for-the-badge&logo=flutter&logoColor=white)
+[![NestJS](https://img.shields.io/badge/nestjs-3776AB?style=for-the-badge&logo=nestjs&logoColor=white)](https://img.shields.io/badge/nestjs-3776AB?style=for-the-badge&logo=nestjs&logoColor=white)
+[![Docker](https://img.shields.io/badge/docker-3776AB?style=for-the-badge&logo=docker&logoColor=white)](https://img.shields.io/badge/docker-3776AB?style=for-the-badge&logo=docker&logoColor=white)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source-175x29.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 This repo contains the source code of our demo at [GalsenDev](https://github.com/GalsenDev221) "WeekEnd du Code" event.  

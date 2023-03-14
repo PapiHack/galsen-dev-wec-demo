@@ -3,6 +3,7 @@ import 'package:simple_blog_app/services/services.dart';
 
 class ArticleRepository {
   ArticleService? articleService;
+  
   ArticleRepository({
     this.articleService,
   }) {
