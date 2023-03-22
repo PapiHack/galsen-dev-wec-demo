@@ -33,7 +33,7 @@ dependencies:
   sizer: ^2.0.15
   google_fonts: ^4.0.1
   flutter_dotenv: ^5.0.2
-  dio: ^4.0.6
+  dio: ^5.0.3
   flutter_svg: ^1.1.6
 
 
